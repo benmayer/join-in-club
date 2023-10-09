@@ -5,19 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Join in - Learn a new sport</title>
     <meta name="description" content="Book local experts and improve a skill or learn a new sport anything from tennis, swimming, skating, bouldering and much, much more.">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PY98XC2CJD"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
+      gtag('config', 'G-PY98XC2CJD');
+    </script>
     <!-- update the version number as needed -->
     <script defer src="/__/firebase/10.4.0/firebase-app-compat.js"></script>
     <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/10.4.0/firebase-auth-compat.js"></script>
+    <!-- <script defer src="/__/firebase/10.4.0/firebase-auth-compat.js"></script>
     <script defer src="/__/firebase/10.4.0/firebase-database-compat.js"></script>
     <script defer src="/__/firebase/10.4.0/firebase-firestore-compat.js"></script>
     <script defer src="/__/firebase/10.4.0/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/10.4.0/firebase-messaging-compat.js"></script>
+    <script defer src="/__/firebase/10.4.0/firebase-messaging-compat.js"></script> -->
     <script defer src="/__/firebase/10.4.0/firebase-storage-compat.js"></script>
     <script defer src="/__/firebase/10.4.0/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/10.4.0/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/10.4.0/firebase-performance-compat.js"></script>
+    <!-- <script defer src="/__/firebase/10.4.0/firebase-remote-config-compat.js"></script>
+    <script defer src="/__/firebase/10.4.0/firebase-performance-compat.js"></script> -->
     <!-- 
       initialize the SDK after all desired features are loaded, set useEmulator to false
       to avoid connecting the SDK to running emulators.
@@ -309,19 +317,18 @@
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         const loadEl = document.querySelector('#load');
-
         try {
           let app = firebase.app();
           let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
+            // 'auth', 
+            // 'database', 
+            // 'firestore',
+            // 'functions',
+            // 'messaging', 
             'storage', 
             'analytics', 
-            'remoteConfig',
-            'performance',
+            // 'remoteConfig',
+            // 'performance',
           ].filter(feature => typeof app[feature] === 'function');
          // loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
             console.log(`Firebase SDK loaded with ${features.join(', ')}`);
