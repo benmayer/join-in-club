@@ -62,15 +62,73 @@
        h1 { font-size: 32px; font-weight: 400; color: inherit; margin: 0 0 1em;}
        h2 { color: inherit; font-weight: 400; font-size: 30px; margin: 0 0 1em; }
        p { line-height: 140%; margin: 0 0 8px; font-size: 14px;color: inherit }
-       a { display: inline-block;}
+       a { display: inline-block; color:inherit; text-decoration: underline; }
        svg {width: 100%;}
        img {
             max-width: 100%;
         }
       .content_section {
-        max-width: 520px;
+        max-width: 780px;
         margin: 1rem auto;
         padding: 10px;
+      }
+      .help-content {
+        text-align: left;
+        line-height: 1.6;
+      }
+      .help-content h1,
+      .help-content h2,
+      .help-content h3 {
+        color: inherit;
+        margin: 1.5rem 0 0.75rem;
+      }
+      .help-content h1 {
+        font-size: 2rem;
+      }
+      .help-content h2 {
+        font-size: 1.2rem;
+        margin-top: 2rem;
+      }
+      .help-content p,
+      .help-content li {
+        font-size: 0.95rem;
+        margin: 0 0 0.75rem;
+      }
+      .help-content ul {
+        padding-left: 1.25rem;
+        margin: 0 0 1rem;
+      }
+      .help-content details {
+        margin: 0.75rem 0;
+        border-left: 2px solid rgba(255,250,239,0.3);
+        padding-left: 1rem;
+      }
+      .help-content summary {
+        cursor: pointer;
+        font-weight: 500;
+        color: #FFFAEF;
+        user-select: none;
+        padding: 0.5rem 0;
+        transition: opacity 0.2s;
+      }
+      .help-content summary:hover {
+        opacity: 0.8;
+      }
+      .help-content details[open] summary {
+        margin-bottom: 0.5rem;
+      }
+      .help-content details > p,
+      .help-content details > ul {
+        margin-top: 0.5rem;
+      }
+      .help-content .intro {
+        font-size: 0.95rem;
+        margin-bottom: 1.5rem;
+      }
+      .help-content .contact {
+        margin-top: 2rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid rgba(255,250,239,0.2);
       }
       .brand__logo {
         fill: #FFFDF4;
@@ -135,10 +193,127 @@
       <div class="content">
         <section class="content_section"> 
           
-          <h2 class="brand__tagline">Help & Support</h2>        
+          <h1 class="">Help & Support</h1>        
         </section>
         <section class="content_section about">
-          <p>Coming Soon</p>
+          <article class="help-content">
+            <p class="intro">Everything you need to know about Join in - the easiest way to find people to play sport with, today. Just find a session and rock up.</p>
+
+            <h2>How Join in works</h2>
+
+            <details>
+              <summary>What is Join in?</summary>
+              <p>Join in helps busy adults find people to play sport with, spontaneously. Browse sessions happening near you, or create your own and let others find it.</p>
+            </details>
+
+            <details>
+              <summary>Do I need to plan anything in advance?</summary>
+              <p>No. Join in is built for spontaneous activity. Open the app, see what's happening nearby, and join. You can also create a session yourself and invite others.</p>
+            </details>
+
+            <details>
+              <summary>What is a session?</summary>
+              <p>A session is an activity at a specific time and location. Anyone can create one: pick a sport, a time, a location, and a visibility level. Others can then see it and join, or request to join.</p>
+            </details>
+
+            <details>
+              <summary>How do I find a game near me?</summary>
+              <p>Open the app and check the map or list view. You can filter by sport to find exactly what you're looking for.</p>
+            </details>
+
+            <details>
+              <summary>What are the visibility levels for a session?</summary>
+              <p>When you create a session, you choose who can see it:</p>
+              <ul>
+                <li><strong>Public</strong>: anyone on Join in</li>
+                <li><strong>Friends of friends</strong>: your connections, plus one degree out</li>
+                <li><strong>Friends only</strong>: only people you're connected with</li>
+                <li><strong>Invite only</strong>: specific people you invite directly</li>
+              </ul>
+            </details>
+
+            <details>
+              <summary>What's the difference between joining and requesting to join?</summary>
+              <p>For public and friends-of-friends sessions, the host may allow direct joins. For friends-only and invite-only sessions, or if the host prefers, you'll send a request that the host can accept or decline.</p>
+            </details>
+
+            <details>
+              <summary>What happens if I join a session but can't make it anymore?</summary>
+              <p>Leave the session in the app as soon as you know. It's good practice to give the host a heads-up. Repeated no-shows affect how reliable you appear to hosts.</p>
+            </details>
+
+            <h2>Safety &amp; trust</h2>
+
+            <details>
+              <summary>Is it safe to meet people through Join in?</summary>
+              <p>Join in helps you find people to play with, but we don't organize, supervise, or vet the sessions or the people in them. Treat it the way you'd treat meeting anyone new through a public activity: use common sense, meet in public places, and tell someone where you're going.</p>
+              <p>We're committed to keeping Join in a fun and safe place, so please make sure you report people who do not behave according to our code of conduct.</p>
+              <p>Even though Join in is generally not for children, we are still committed to upholding Child Safety Standards on the app. Read our <a href="/terms/child-safety/">Child Safety Standards</a>.</p>
+            </details>
+
+            <details>
+              <summary>Who can see my location?</summary>
+              <p>Your location is used to show you nearby sessions on the map. It is not shared with other users beyond what's needed to display session locations you've chosen to make visible.</p>
+            </details>
+
+            <details>
+              <summary>How do I report someone or a session?</summary>
+              <p>You can report or block a user directly from their profile, or from within a session. Blocking removes them from your sessions and prevents them from contacting you. If you need to reach us directly, email <a href="mailto:hello@joinin.club">hello@joinin.club</a>. For more details, see our <a href="/terms/child-safety/">Child Safety Standards</a>.</p>
+            </details>
+
+            <details>
+              <summary>Can anyone join a session I create?</summary>
+              <p>Only if you set it to <em>public</em> and if you set the join setting to <em>open.</em> You control visibility per session, from fully public down to invite-only and can choose if people need your approval for joining or not.</p>
+            </details>
+
+            <h2>Sports &amp; locations</h2>
+
+            <details>
+              <summary>Which sports are supported?</summary>
+              <p>Join in offers a wide range of group sport activities from football, volleyball, table tennis, padel, running, cycling and many many more. We're constantly adding new ones too, so let us know if you're missing anything.</p>
+            </details>
+
+            <details>
+              <summary>Which cities is Join in available in?</summary>
+              <p>Join in is currently launching in Berlin. More cities are coming.</p>
+            </details>
+
+            <details>
+              <summary>How are sports locations added to the map?</summary>
+              <p>We've mapped Berlin's public courts, parks, and outdoor sports areas to start. Can't find your spot? Let us know and we'll add it.</p>
+            </details>
+
+            <details>
+              <summary>Do I need equipment or a team before showing up?</summary>
+              <p>Check the session description before heading over. Some sessions specify skill level or equipment; others are open drop-in. If you're unsure, you can always the host in the group chat.</p>
+            </details>
+
+            <h2>Account &amp; profile</h2>
+
+            <details>
+              <summary>Is Join in free?</summary>
+              <p>Yes. Join in is free to download and use.</p>
+            </details>
+
+            <details>
+              <summary>How do I sign up?</summary>
+              <p>Download the app and create an account. You must be at least 16 to use Join in.</p>
+            </details>
+
+            <details>
+              <summary>How do I connect with my friends?</summary>
+              <p>Search for them by name or username, or send them an invite link. Once connected, friends-of-friends and friends-only sessions become visible to you where relevant.</p>
+            </details>
+
+            <details>
+              <summary>Is Join in available on both iOS and Android?</summary>
+              <p>Yes - you can use and invite your friends both on Android and iOS.</p>
+            </details>
+
+            <div class="contact">
+              <p><strong>Have a question that's not covered here?</strong> Email us at <a href="mailto:hello@joinin.club">hello@joinin.club</a>.</p>
+            </div>
+          </article>
         </section>
       </div>
     </div>
