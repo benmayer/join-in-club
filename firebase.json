@@ -3,8 +3,33 @@
     "public": "public",
     "ignore": [
       "firebase.json",
-      "**/.*",
+      "**/.DS_Store",
       "**/node_modules/**"
+    ],
+    "headers": [
+      {
+        "source": "/.well-known/apple-app-site-association",
+        "headers": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ]
+      }
+    ],
+    "rewrites": [
+      {
+        "source": "/session/**",
+        "destination": "/go/index.html"
+      },
+      {
+        "source": "/user/**",
+        "destination": "/go/index.html"
+      },
+      {
+        "source": "/place/**",
+        "destination": "/go/index.html"
+      }
     ]
   }
 }
