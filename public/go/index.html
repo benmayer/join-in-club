@@ -187,6 +187,26 @@
         const deepLinkPattern = /^\/(session|user|place)\/[A-Za-z0-9\-]+$/;
 
         if (deepLinkPattern.test(pathname)) {
+          // Record click for deferred deep linking after App Store install
+          if (/(iPhone|iPad|iPod)/.test(navigator.userAgent)) {
+            fetch('https://ihgoxnqehjnvsssciqie.supabase.co/functions/v1/link-click', {
+              method: 'POST',
+              headers: { 'content-type': 'application/json' },
+              keepalive: true,
+              body: JSON.stringify({
+                path: pathname,
+                signals: {
+                  platform: 'ios',
+                  tz: Intl.DateTimeFormat().resolvedOptions().timeZone,
+                  lang: navigator.language,
+                  os_major: (function () { var m = navigator.userAgent.match(/OS (\d+)_/); return m ? parseInt(m[1], 10) : null; })(),
+                  screen_w: Math.min(screen.width, screen.height),
+                  screen_h: Math.max(screen.width, screen.height)
+                }
+              })
+            }).catch(function () {})
+          }
+
           const deepLinkUrl = 'joinin://' + pathname.substring(1);
           window.location.href = deepLinkUrl;
 
