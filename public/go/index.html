@@ -184,7 +184,7 @@
       // Attempt deep linking if the app is installed
       window.addEventListener('load', function() {
         const pathname = window.location.pathname;
-        const deepLinkPattern = /^\/(session|user|place)\/[A-Za-z0-9\-]+$/;
+        const deepLinkPattern = /^\/(session|user|place|signal)\/[A-Za-z0-9\-]+$/;
 
         if (deepLinkPattern.test(pathname)) {
           // Record click for deferred deep linking after App Store install
