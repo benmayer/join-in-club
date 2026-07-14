@@ -29,6 +29,10 @@
       {
         "source": "/place/**",
         "destination": "/go/index.html"
+      },
+      {
+        "source": "/signal/**",
+        "destination": "/go/index.html"
       }
     ]
   }
