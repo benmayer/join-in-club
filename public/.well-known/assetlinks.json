@@ -1,1 +1,16 @@
-[{"relation":["delegate_permission/common.handle_all_urls"],"target":{"namespace":"android_app","package_name":"club.joinin.app","sha256_cert_fingerprints":["25:C9:22:2C:AD:69:EF:5C:36:3C:DE:C2:32:44:19:B2:27:19:EC:99:BA:D7:4E:83:69:93:20:7F:33:A4:FB:19"]}}]
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "club.joinin.app",
+      "sha256_cert_fingerprints": [
+        "25:C9:22:2C:AD:69:EF:5C:36:3C:DE:C2:32:44:19:B2:27:19:EC:99:BA:D7:4E:83:69:93:20:7F:33:A4:FB:19",
+        "12:C7:42:85:24:33:04:15:09:35:DA:0E:90:67:55:D1:A4:05:98:C7:91:DD:5E:46:D7:51:95:7D:0D:0B:25:4A"
+      ]
+    }
+  }
+]
